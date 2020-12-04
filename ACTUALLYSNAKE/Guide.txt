@@ -1,2 +1,3 @@
 "Enter" for pause;
 "x" for exit/kill app.
+All movements via "arrows"
