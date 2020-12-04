@@ -1,0 +1,2 @@
+"Enter" for pause;
+"x" for exit/kill app.
