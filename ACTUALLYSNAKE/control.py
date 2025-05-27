@@ -4,27 +4,7 @@ from pygame.locals import *
 
 class Control:
     """
-    Manages the state and behavior of the game.
-
-    This class is responsible for initializing the game with default settings
-    and handling user input to update the game's state based on events. It
-    allows for control over the game's direction and pause functionality.
-
-    Methods:
-        __init__
-        control
-
-    Attributes:
-        flag_game
-        flag_direction
-        flag_pause
-
-    - __init__: Initializes the game with default settings, setting up the
-      initial state of the game and defining several flags that control the
-      game's behavior.
-    - control: Handles user input and updates the game state based on events,
-      modifying flags that track the game's direction and whether it is paused
-      or running.
+    Testing how autopublishing works
     """
 
     def __init__(self):
