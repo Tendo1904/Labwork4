@@ -4,7 +4,7 @@ from pygame.locals import *
 
 class Control:
     """
-    Testing how autopublishing works again
+    Changes applied
     """
 
     def __init__(self):
