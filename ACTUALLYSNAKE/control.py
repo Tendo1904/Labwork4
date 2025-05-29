@@ -1,13 +1,46 @@
 import pygame
 from pygame.locals import *
 
+
 class Control:
+    """
+    Testing how autopublishing works again
+    """
+
     def __init__(self):
+        """
+        Initializes the game with default settings.
+
+            This method sets up the initial state of the game by defining
+            several flags that control the game's behavior.
+
+            Attributes:
+                flag_game: A boolean indicating if the game is currently active.
+                flag_direction: A string representing the current movement direction of the game.
+                flag_pause: A boolean indicating if the game is currently paused.
+
+            Returns:
+                None
+        """
         self.flag_game = True
         self.flag_direction = "RIGHT"
         self.flag_pause = True
 
     def control(self):
+        """
+        Handles user input and updates game state based on events.
+
+            This method processes keyboard and quit events to control the
+            game's state, including direction changes and pause functionality.
+            It modifies the internal flags that track the game's direction and
+            whether the game is paused or running.
+
+            Parameters:
+                None
+
+            Returns:
+                None
+        """
         for event in pygame.event.get():
             if event.type == QUIT:
                 self.flag_game = False
