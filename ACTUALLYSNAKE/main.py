@@ -6,7 +6,7 @@ from food import Food
 from music import Music
 
 pygame.init()
-window = pygame.display.set_mode((441,491))
+window = pygame.display.set_mode((441, 491))
 pygame.display.set_caption("Snake")
 control = Control()
 snake = Snake()
@@ -30,12 +30,12 @@ while control.flag_game:
         gui.draw_lose(window)
     gui.draw_indicator(window)
     gui.draw_level(window)
-    gui.render(snake,window)
+    gui.render(snake, window)
     if speed % 100 == 0 and control.flag_pause and gui.game == "GAME":
         snake.moove(control)
-        snake.count_score(food,gui)
+        snake.count_score(food, gui)
         snake.check_barrier(gui)
-        snake.eat(food,gui)
+        snake.eat(food, gui)
         snake.check_end_window()
         snake.animation()
     speed += 4
